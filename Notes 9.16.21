@@ -1,13 +1,44 @@
- fill or stroke uses:
- COLOR: 0-255: shade of gray
- Red, Green, Blue: 0-255 for any color 
- Hex Code: number in base 16, starts with a #
- 
+9/20---------------------------------------------------------------------------------------------------------------
+fill or stroke color: 
+0-255: shade of gray
+Red, Green, Blue: 0-255 for any color 
+Hex Code: number in base 16
+
 size (400, 400) ;
 fill(99) ;
 stroke (255) ;
 background (0) ;
 circle (200, 200 , 100) ;
 
-int fred; "fred" is a variable
-fred = 50;
+9/21---------------------------------------------------------------------------------------------------------------
+Variables
+Java is a statically typed language. Meaning all variables must be declared with a particular type before being used. 
+int _____ //integers
+float _____ //floaitng point values with up to 7 digits of precision
+boolean _____ // true or false
+char _____ // single characters (uses UTF-16 unicode)
+int _, _ // if same type, can put it in one line
+
+size (400, 400);
+stroke (255);
+background (50, 100, 250);
+
+int x; 
+x = 100;
+int y; 
+y = 150;
+
+fill(100, 40, 40);
+circle (x, y , 100);
+
+fill(255);
+circle (x, y , 66);
+
+fill(100, 40, 40);
+circle (x, y , 33);
+
+Functions:
+4 parts: return type, name, pararmeter, body
+if the function returns a vlue, the type of the value must be the function's return type
+if a fucntion does not return a value, the return type is void
+
