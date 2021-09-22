@@ -1,44 +1,94 @@
 9/20---------------------------------------------------------------------------------------------------------------
 fill or stroke color: 
-0-255: shade of gray
-Red, Green, Blue: 0-255 for any color 
-Hex Code: number in base 16
+  0-255: shade of gray
+  Red, Green, Blue: 0-255 for any color 
+  Hex Code: number in base 16
 
-size (400, 400) ;
-fill(99) ;
-stroke (255) ;
-background (0) ;
-circle (200, 200 , 100) ;
+    size (400, 400) ;
+    fill(99) ;
+    stroke (255) ;
+    background (0) ;
+    circle (200, 200 , 100) ;
 
 9/21---------------------------------------------------------------------------------------------------------------
 Variables
-Java is a statically typed language. Meaning all variables must be declared with a particular type before being used. 
-int _____ //integers
-float _____ //floaitng point values with up to 7 digits of precision
-boolean _____ // true or false
-char _____ // single characters (uses UTF-16 unicode)
-int _, _ // if same type, can put it in one line
+  Java is a statically typed language. Meaning all variables must be declared with a particular type before being used. 
+    int _____ //integers
+    float _____ //floaitng point values with up to 7 digits of precision
+    boolean _____ // true or false
+    char _____ // single characters (uses UTF-16 unicode)
+    int _, _ // if same type, can put it in one line
 
-size (400, 400);
-stroke (255);
-background (50, 100, 250);
+      size (400, 400);
+      stroke (255);
+      background (50, 100, 250);
 
-int x; 
-x = 100;
-int y; 
-y = 150;
+      int x; 
+      x = 100;
+      int y; 
+      y = 150;
 
-fill(100, 40, 40);
-circle (x, y , 100);
+      fill(100, 40, 40);
+      circle (x, y , 100);
 
-fill(255);
-circle (x, y , 66);
+      fill(255);
+      circle (x, y , 66);
 
-fill(100, 40, 40);
-circle (x, y , 33);
+      fill(100, 40, 40);
+      circle (x, y , 33);
 
-Functions:
-4 parts: return type, name, pararmeter, body
-if the function returns a vlue, the type of the value must be the function's return type
-if a fucntion does not return a value, the return type is void
+9/22---------------------------------------------------------------------------------------------------------------
 
+Functions :
+  4 parts: return type, name, pararmeter, body
+     RETURN TYPE
+      if the function returns a value, the type of the value must be the function's return type
+      if a fucntion does not return a value, the return type is "void"
+     PARAMETER LIST
+      parameters are placed inside (), searated by ,
+      parameters must be given types and names, like normal variables
+     BODY
+      the code to run when the function is called.
+      the entire bod of the function must be placed inside "{}"
+      if a function returns a value, the last statement must be return "VALUE"
+  The "setup" Function
+    if you create a void function called "setup", processing will automatically run that function
+    you have to include a setup function as soon as you begin to write other functions
+    once you create a setup function, 
+    
+  void setup() 
+  {
+    size (400, 400);
+    stroke (255);
+    background (50, 100, 250);
+
+    target(200, 200);
+    target(150, 150);
+    while (x<400)
+    {
+    target(x,y);
+    x=x+100;
+  }
+
+  void target(int x, int y)
+  {  
+    fill(100, 40, 40);
+    circle (x, y , 100);
+
+    fill(255);
+    circle (x, y , 66);
+
+    fill(100, 40, 40);
+    circle (x, y , 33);
+  }
+    
+The "while": Loop
+  repeat a section of code based on a boolean condition
+    while (<boolean value>) 
+    {
+    CODE
+    }
+  "BOOLEAN VALUE" can be anything that returns a boolean, such as:
+    "true" or "false"
+    comparisson operators: "< > <= >= == !="
+    boolean operators and: "&&",or: "||", not: "!"
