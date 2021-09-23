@@ -62,8 +62,8 @@ Functions :
     stroke (255);
     background (50, 100, 250);
 
-    target(200, 200);
-    target(150, 150);
+    int x=50; 
+    int y=200;
     while (x<400)
     {
     target(x,y);
