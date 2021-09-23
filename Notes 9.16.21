@@ -92,3 +92,45 @@ The "while": Loop
     "true" or "false"
     comparisson operators: "< > <= >= == !="
     boolean operators and: "&&",or: "||", not: "!"
+    
+9/23---------------------------------------------------------------------------------------------------------------
+STRIPE CROSS MIDDLE
+void setup()
+{
+  size (400, 400);
+  background (#C46D6E);
+  int xface=40;
+  int yface=200;
+  while (xface<400)
+  {
+    avatar(xface, yface); 
+    //xface=xface+80;
+    //or
+    xface+=80;
+    //x++ same as +=1 same as x=x+1
+  }
+}
+
+GRID
+void setup()
+{
+  size (400, 400);
+  background (#C46D6E);
+  int xface=40;
+  int yface=50;
+  while (yface < 400 )
+  {
+      xface=40; //RESETS THE X VALUE AFTER Y FINISHES RUNNING 
+      while (xface<400)
+    {
+      avatar(xface, yface); 
+      //xface=xface+80;
+      //or
+      xface+=80;
+      //x++ same as +=1 same as x=x+1
+    }
+    yface=yface+100;
+  }
+}
+"println(____)" puts text in the console
+"println(____+ yface)"
