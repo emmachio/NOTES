@@ -35,7 +35,7 @@ Variables
       circle (x, y , 66);
 
       fill(100, 40, 40);
-      circle (x, y , 33);
+circle (x, y , 33);
 
 9/22---------------------------------------------------------------------------------------------------------------
 
@@ -134,3 +134,45 @@ void setup()
 }
 "println(____)" puts text in the console
 "println(____+ yface)"
+
+9/24
+PLAN
+//void setup () { size, background, declare 4 variable, }
+while x less than something, y less than something, l less than something w less than something, change the color, }
+function named "paint" that draws the rectangle
+
+
+//void setup () { size, background, declare 4 variable, }
+//while x less than something, y less than something, l less than something w less than something, change the color, }
+//function named "paint" that draws the rectangle
+
+void setup() 
+{ size (600, 600);
+background (50, 100, 250);
+int x=int (random (600));
+int y=int(random (600));
+int w=int(random (300));
+int l=int(random (300));
+int r=int(random (255));
+int g=int(random (255));
+int b=int(random (255));
+while (w<300)
+{
+int x=int (random (600));
+int y=int(random (600));
+int w=int(random (300));
+int l=int(random (300));
+int r=int(random (255));
+int g=int(random (255));
+int b=int(random (255));
+paint (x, y,w,l,r,g,b);
+}
+}
+
+
+
+void paint(int x, int y, int w, int l, int r, int g, int b)
+{ 
+  rect (x, y, w, l);
+  fill(r, g, b );
+}
