@@ -137,39 +137,40 @@ void setup()
 
 9/24
 PLAN
-//void setup () { size, background, declare 4 variable, }
-while x less than something, y less than something, l less than something w less than something, change the color, }
-function named "paint" that draws the rectangle
-
-
-//void setup () { size, background, declare 4 variable, }
-//while x less than something, y less than something, l less than something w less than something, change the color, }
-//function named "paint" that draws the rectangle
+es (36 sloc)  1.09 KB
+   
+//What processing functions do you think are needed for this program?
+//random, void, size, stroke, int, rect, fill
+//What processing control structures are needed?
+//while, setup
+//Come up with an initial plan on how to make this program.
+//paint function that creates one rectangle and fills it. new function setup which has changes size,stroke. it then declares variables for rect and colors and then use while to repeat the function.
 
 void setup() 
-{ size (600, 600);
-background (50, 100, 250);
-int x=int (random (600));
-int y=int(random (600));
-int w=int(random (300));
-int l=int(random (300));
-int r=int(random (255));
-int g=int(random (255));
-int b=int(random (255));
-while (w<300)
-{
-int x=int (random (600));
-int y=int(random (600));
-int w=int(random (300));
-int l=int(random (300));
-int r=int(random (255));
-int g=int(random (255));
-int b=int(random (255));
-paint (x, y,w,l,r,g,b);
+{ 
+  size (600, 600);
+  stroke (0);
+  int x=int(random (600));
+  int y=int(random (600));
+  int w=int(random (300));
+  int l=int(random (300));
+  int r=int(random (255));
+  int g=int(random (255));
+  int b=int(random (255));
+  int number=int(random (250));
+  while (number!=100)
+  {
+    paint (x,y,w,l,r,g,b);
+    number=int(random (250));
+    x=int (random (600));
+    y=int(random (600));
+    w=int(random (300));
+    l=int(random (300));
+    r=int(random (255));
+    g=int(random (255));
+    b=int(random (255));
+  }
 }
-}
-
-
 
 void paint(int x, int y, int w, int l, int r, int g, int b)
 { 
