@@ -177,3 +177,34 @@ void paint(int x, int y, int w, int l, int r, int g, int b)
   rect (x, y, w, l);
   fill(r, g, b );
 }
+
+9/27
+Height and Width
+"width" is a special variable that will return the width of your program window , in pixels
+"height" is a special variable that wi;; return the height of your program window, in pixels.
+
+  void setup() 
+  {
+    size (400, 400);
+    stroke (0);
+    background (50, 100, 250);
+
+    int x=int(random(width)); // to make it always fit inside the border: //int x=int(random(diameter/2, width - diameter/2)
+    println(x);
+    int y=int(random(height)); // to make it always fit inside the border: //int y=int(random(diameter/2, height - diameter/2)
+    println(y);
+    int diameter=100;
+    target(x,y, diameter);
+  }
+
+  void target(int x, int y, int diameter)
+  {  
+   fill(100, 40, 40);
+    circle (x, y , diameter);
+
+    fill(255);
+    circle (x, y , 0.6666666*diameter); // diameter * (2/3.0) 
+
+    fill(100, 40, 40);
+    circle (x, y , 0.3333333*diameter); //diameter / 3.0 works too
+  }
