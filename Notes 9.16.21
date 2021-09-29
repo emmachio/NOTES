@@ -209,7 +209,7 @@ Height and Width
     circle (x, y , 0.3333333*diameter); //diameter / 3.0 works too
   }
   
-9/29/21---------------------------------------------------------------------------------------------------------------
+9/28/21---------------------------------------------------------------------------------------------------------------
 Draw
 draw is a special function, related to setup
 If you include a void draw function, it will run immediately after setup, and continue to run until the program is stopped.
@@ -227,3 +227,22 @@ For now, there are three kinds of scope:
   Global: Variable can be used in any part of a program.
   Function: Variable can be used within a function.
   Block: Variable can be used within a control structure (such as a loop or conditional statement.)
+  
+9/29/21---------------------------------------------------------------------------------------------------------------
+"if"
+  if (BOOLEAN){ CODE }
+    if the boolean value is true, then the code will run
+
+"else"
+  if (BOOLEAN){ CODE } else { CODE }
+    When BOOLEAN is true code block 0 will run.
+    When BOOLEAN is false code block 1 will run.
+
+"else if"
+  if (BOOLEAN_0) {  //CODE BLOCK 0 } else if (BOOLEAN 1) {  //CODE BLOCK 1 } else { //CODE BLOCK 2 }
+    The first BOOLEAN expression to evaluate to true will stop the rest of the conditions from being checked.
+    When used, "else if" must go after an if or another "else if", and before "else"
+    You can use as many "else if" statements in a chain of conditional checks as needed.
+    "else" is not required after one or more else if statements.
+
+
