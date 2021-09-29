@@ -135,7 +135,7 @@ void setup()
 "println(____)" puts text in the console
 "println(____+ yface)"
 
-9/24
+9/24---------------------------------------------------------------------------------------------------------------
 PLAN
 es (36 sloc)  1.09 KB
    
@@ -178,7 +178,7 @@ void paint(int x, int y, int w, int l, int r, int g, int b)
   fill(r, g, b );
 }
 
-9/27
+9/27---------------------------------------------------------------------------------------------------------------
 Height and Width
 "width" is a special variable that will return the width of your program window , in pixels
 "height" is a special variable that wi;; return the height of your program window, in pixels.
@@ -208,3 +208,22 @@ Height and Width
     fill(100, 40, 40);
     circle (x, y , 0.3333333*diameter); //diameter / 3.0 works too
   }
+  
+9/29/21---------------------------------------------------------------------------------------------------------------
+Draw
+draw is a special function, related to setup
+If you include a void draw function, it will run immediately after setup, and continue to run until the program is stopped.
+By default, draw will attempt to run 60 times a second.
+  You can view the approximate frameRate with the frameRate variable.
+You can change the rate of draw with the frameRate() function.
+  frameRate( r ) will attempt to set the number of times draw runs to r times a second.
+  You should only use frameRate() in setup
+  
+Scope
+The scope of a variable is the section of code that has access to the variable.
+In Java, scope is determined based on where the variable is declared.
+A variable cannot be accessed outside of its scope.
+For now, there are three kinds of scope:
+  Global: Variable can be used in any part of a program.
+  Function: Variable can be used within a function.
+  Block: Variable can be used within a control structure (such as a loop or conditional statement.)
